@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div,
+        span {
+            background-color: salmon;
+            border: 3px solid black;
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        div {
+            /* 기본값 */
+            /* display: block; */
+            display: inline-block;
+        }
+
+        span {
+            background-color: blue;
+        }
+    </style>
+    <title>block line</title>
+</head>
+<body>
+    <div>div</div>
+    <div>div</div>
+    <div>div</div>
+    <span>span</span><span>span</span>
+
+    <!-- XX 오류 -->
+    <span>
+        <div>내용</div>
+    </span>
+    <!-- XX 오류 -->
+
+    <!-- 오류 아님 -->
+    <a href="#">
+        <div>내용</div>
+    </a>
+    <!-- 오류 아님 -->
+</body>
+</html>

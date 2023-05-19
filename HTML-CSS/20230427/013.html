@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        body,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: royalblue;
+            /*padding: 10px;*/
+            padding: 10px 20px 30px 40px;
+            margin: 10px 20px 30px 40px;
+            margin: 100px 0 100px auto;
+            /*padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;*/
+        }
+
+        ul{
+            background-color: skyblue;
+            padding: 20px;
+        }
+
+        li:first-child{
+            margin-bottom: 50px;
+        }
+
+        ul li {
+            list-style: none;
+            width: 100px;
+            height: 100px;
+            background-color: royalblue;
+            border: 5px solid rgb(150, 147, 147);
+            /*margin: 20px;*/
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        div
+    </div>
+    <ul>
+        <li>A</li>
+        <li>B</li>
+    </ul>
+</body>
+</html>
