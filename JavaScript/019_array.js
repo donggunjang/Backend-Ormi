@@ -163,6 +163,17 @@ let data = [{
     age: 30
 }]
 
+
+
 // 원하는 데이터
 // 위 데이터를 가지고 아래와 같이 새로운 array를 만들기
 data.map((v, i) => [i, v.name.split(" ")[1], v.age -1])
+
+fetch('http://test.api.weniv.co.kr/mall')
+    .then(data=>data.json())
+    .then(data=> {
+        let pd = data.length;
+        let price_avg = data.map((x) => x["price"]).reduce((a, c) => a + c, 0) / pd;
+        console.log(`product: ${pd}개 평균가격: ${price_avg}`)
+    })
+
